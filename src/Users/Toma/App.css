@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: 700; 
+    margin-top: 40px;
+}
+.content{
+    width: 500px;
+    height: 150px;
+    border: 1px solid grey;
+    background: linear-gradient(to right, #0000ff, #00ffff, #0000ff);
+    background-size: 200% auto;
+    animation: shining 3s linear infinite;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+    }
+  
+  @keyframes shining {
+    0% {
+    background-position: 0% center;
+      }
+    50% {
+    background-position: 100% center;
+      }
+    100% {
+    background-position: 0% center;
+      } 
+    }
+    

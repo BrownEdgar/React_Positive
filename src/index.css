@@ -19,17 +19,3 @@ a {
 ul {
   list-style: none;
 }
-
-button {
-  margin: 20px;
-  padding: .6em 1em;
-  border-radius: 10px;
-  border: 0;
-  background-color: #1d1d1d;
-  color: whitesmoke;
-  cursor: pointer;
-}
-
-.green {
-  background-color: #009879;
-}

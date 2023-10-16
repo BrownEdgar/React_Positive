@@ -1,0 +1,78 @@
+.App{
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    padding: 1em;
+   &-content{
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+&-container{
+    width: 300px;
+    border: 1px solid grey;
+    margin-left: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+    border-radius: 10px;
+    background: linear-gradient(to right, #373738, #ebefef, #373738);
+    background-size: 200% auto;
+    animation: shining 3s linear infinite;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     
+}
+@keyframes shining {
+    0% {
+    background-position: 0% center;
+      }
+    50% {
+    background-position: 100% center;
+      }
+    100% {
+    background-position: 0% center;
+      } 
+    }
+button{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    padding: .6em 1em;
+    border-radius: 10px;
+    border: 0;
+    background-color: #1d1d1d;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: rgb(66, 67, 68) 0px 20px 30px -10px;
+    transition: .5s;
+      
+      }
+button:hover{
+    scale: 1.2;
+    transition: scale .5s;
+    background-color: rgb(160, 159, 159);
+    color: #141313;
+    font-weight: 900;
+    font-size: 16px;
+
+      }
+span{
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .5s;
+    color: rgb(137, 37, 37);
+  
+  }
+span:hover{
+    scale: 1.5;
+    transition: scale .5s;
+    color: white;
+  }
+  }
+
+   

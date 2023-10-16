@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import { useState } from "react"
 import './App.scss'
 import Dwayne from '../../assets/images/Dwayne.jpg'
+=======
+import { useState } from 'react'
+>>>>>>> 1e38467e4c6b643099c9636903c0cb265b4c5717
 
 export default function App() {
 const [data, setData] = useState([

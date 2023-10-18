@@ -1,0 +1,43 @@
+.App{
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    padding: 1em;
+   
+
+&-container{
+    width: 500px;
+    height: 70px;
+    border: 1px solid grey;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f06666, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   
+   
+     
+}
+h3{
+    margin-left: 20px;
+}
+
+span{
+    cursor: pointer;
+    font-weight: 700;
+    transition: .5s;
+    color: rgb(137, 37, 37);
+    float: right;
+   
+  
+  }
+span:hover{
+    scale: 1.5;
+    transition: scale .5s;
+    color: white;
+  }
+  }

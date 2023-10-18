@@ -1,3 +1,4 @@
+
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Teko', sans-serif; */
 
@@ -7,16 +8,11 @@ font-family: 'Teko', sans-serif; */
   box-sizing: border-box;
 }
 
+
+
 body {
-<<<<<<< HEAD
   font-family: 'Raleway', sans-serif;
-=======
-<<<<<<< HEAD
  font-family: 'Raleway', sans-serif;
-=======
-  font-family: 'Raleway', sans-serif;
->>>>>>> 579851d4790ad967f23c0584ee6e8528d85ffab3
->>>>>>> 1e38467e4c6b643099c9636903c0cb265b4c5717
 }
 
 a {

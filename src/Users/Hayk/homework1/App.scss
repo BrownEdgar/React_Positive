@@ -1,0 +1,52 @@
+body{
+    height: 5000px;
+    background: linear-gradient(#e66465, #9198e5); 
+.Container{
+
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    .Box{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        background-color: beige;
+
+        padding: 3em;
+        width: 30%;
+        border-radius: 15px;
+        position: relative;
+        transition: all 0.5s;
+        &:hover{
+            scale: 1.03;
+        }
+     &_id{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: rgb(101, 75, 75);
+    font-size: 20px;
+    font-weight: 900;
+    color: bisque;
+    text-align: center;
+        border-radius: 50%;
+     }
+     &_delete{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 20px;
+        color: red;
+        font-weight: 900;
+        cursor: pointer;
+        &:hover{
+            scale: 1.4;
+        }
+     }
+       }
+}
+}

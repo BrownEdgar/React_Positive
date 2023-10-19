@@ -26,7 +26,7 @@ export default function App() {
                     <div className='list' key={elem.id}>
                     <ul>
                         <li>
-                        <span>{elem.name} {elem.email}</span>
+                        <span>{elem.name}</span> <br /> <span> {elem.email}</span>
                         <span onClick={() => handleDelete(index)} className='cross'>&#10006;</span>
                         </li>
                     </ul>

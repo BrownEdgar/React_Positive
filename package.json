@@ -12,7 +12,11 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "sass": "^1.69.3"
+=======
+    "sass": "^1.69.4"
+>>>>>>> 1992f87f47ed3c20b5a3987ed003448434b8aa78
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

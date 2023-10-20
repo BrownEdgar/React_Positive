@@ -6,11 +6,11 @@ export default function App() {
         { id: 1, name: "John", surname: "Smith", salary: 340_000, gender: 'male' },
         { id: 2, name: "Luiza", surname: "Sanches", salary: 340_000, gender: 'female' },
         { id: 3, name: "Karen", surname: "Hole", salary: 340_000, gender: 'female' },
-        { id: 3, name: "Sebastian", surname: "Graff", salary: 540_000, gender: 'male' },
-        { id: 4, name: "Leo", surname: "Yohan", salary: 790_000, gender: 'male' },
+        { id: 4, name: "Sebastian", surname: "Graff", salary: 540_000, gender: 'male' },
+        { id: 5, name: "Leo", surname: "Yohan", salary: 790_000, gender: 'male' },
     ])
     const handleClick = (id) => {
-       setUsers(users.toSpliced(id, 1))   
+       setUsers(users.filter(elem => elem.id !== id))   
     }
     const deleteFemale = () => {
         setUsers(users.filter(elem => elem.gender === "male"))

@@ -2,13 +2,17 @@
 import { useEffect, useState } from "react"
 import "./App.scss"
 
+
 export default function App() {
  const [info, setInfo] = useState([])
+
+
  useEffect(() => {
-   fetch("https://jsonplaceholder.typicode.com/todos")
-   .then(res => res.json())
-   .then(data => setInfo(data))
- },[])
+  fetch("https://jsonplaceholder.typicode.com/todos")
+  .then(res => res.json())
+  .then(data => setInfo(data))
+},[])
+
 
  const handleDelete = (index) =>{
    setInfo(info.toSpliced(index,1))
@@ -16,6 +20,7 @@ export default function App() {
 
   return (
     <div className="Container">
+
    {
     info.map((elem,index)=>{
       return (

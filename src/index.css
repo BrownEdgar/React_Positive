@@ -1,11 +1,7 @@
-
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Teko', sans-serif; */
-<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap');
-=======
->>>>>>> 1992f87f47ed3c20b5a3987ed003448434b8aa78
 
 * {
   margin: 0;
@@ -17,10 +13,6 @@ font-family: 'Teko', sans-serif; */
 
 body {
   font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
-=======
- font-family: 'Raleway', sans-serif;
->>>>>>> 1992f87f47ed3c20b5a3987ed003448434b8aa78
 }
 
 a {
@@ -30,11 +22,4 @@ a {
 
 ul {
   list-style: none;
-}
-
-p {
-  border: 2px solid teal;
-  margin: 20px;
-  padding: 1em;
-  font-size: 1em;
 }

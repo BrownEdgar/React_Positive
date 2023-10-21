@@ -10,7 +10,7 @@ export default function App() {
     { id: 5, name: "Leo", surname: "Yohan", salary: 790_000, gender: 'male' },
   ])
   const handleClick = (id) => {
-    setUsers(users.toSpliced(id, 1))
+    setUsers(users.filter(elem => elem.id !== id))
   }
   const deleteFemale = () => {
     setUsers(users.filter(elem => elem.gender === "male"))

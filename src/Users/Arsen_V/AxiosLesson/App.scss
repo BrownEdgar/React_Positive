@@ -1,0 +1,19 @@
+.App {
+    width: 90%;
+    margin: 20%;
+    padding: 1em;
+}
+
+ul{
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    li{
+        padding: 24px;
+        font-size: 20px;
+        height: 150px;
+        vertical-align: top;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

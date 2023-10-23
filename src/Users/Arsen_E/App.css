@@ -1,28 +1,22 @@
-.App{
+.App {
 
-padding: 1em;
-margin-right: 800px;
+  padding: 1em;
+  margin-right: 800px;
 }
 
-.aaa{
-margin-top: 13px;
-background-color: rgb(142, 238, 255);
-
-}
-
-.App p{
-font-size: 12px;
-font-weight: 700;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-border: 2px solid black;
-width: 100%;
-color: rgb(0, 0, 0);
-
+.aaa {
+  margin-top: 13px;
+  background-color: rgb(142, 238, 255);
 
 }
 
-
-.aaa span{
-margin-left: 200px;
-
+.App p {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

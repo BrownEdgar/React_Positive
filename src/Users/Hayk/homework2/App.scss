@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(to top left, powderblue, pink);
+}
+.Container{
+    max-width: 1140px;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    .Box{
+        position: relative;
+        width: 30%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        background-color: aliceblue;
+        padding: 1em;
+        border-radius: 15px;
+        transition: all 0.4s;
+        
+        &:hover{
+            scale: 0.98;
+        }
+        &_delete{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                color: red;
+                scale: 1.2;
+
+            }
+        }
+    }
+}

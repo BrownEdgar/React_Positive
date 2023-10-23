@@ -1,7 +1,7 @@
 import React from 'react'
 import Todos from './todos';
 import Comments from './comments';
-import Posts from './posts'
+import Posts from './posts';
 import Users from './users';
 
 import './App.scss'

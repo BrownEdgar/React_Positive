@@ -1,0 +1,13 @@
+.App {
+    &-container{
+        border: none;
+        border-radius: 15px;
+        margin: 20px;
+        padding: 1em;
+        font-style: 2em;
+        background: linear-gradient(to right, rgb(232, 51, 229), rgb(75, 75, 226));
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    
+    }
+}

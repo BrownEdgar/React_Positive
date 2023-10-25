@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-export default function Child({users
-}) {
+export default function Child({users}) {
   return (
   <div>
     {
@@ -38,7 +37,7 @@ export default function Child({users
 }
 
 Child.propTypes = {
-  usesrs:PropTypes.arrayOf(
+  users:PropTypes.arrayOf(
   PropTypes.exact({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
@@ -60,7 +59,7 @@ Child.propTypes = {
       name: PropTypes.string.isRequired,
       catchPhrase: PropTypes.string.isRequired,
       bs: PropTypes.string.isRequired,
-    }).isRequired
+    }).isRequired,
   })
-  )
+  ).isRequired
 }

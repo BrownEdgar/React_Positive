@@ -6,17 +6,13 @@ import Users from './users';
 
 import './App.scss'
 
-
-
-
-
 export default function App() {
   return (
     <div className='App'>
-        <Comments />
-        <Todos />
-        <Posts />
-        <Users />
+      <Comments />
+      <Todos />
+      <Posts />
+      <Users />
     </div>
   )
 }

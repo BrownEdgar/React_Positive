@@ -1,0 +1,20 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.validation{
+padding: 1em;
+display: flex;
+justify-content: space-between;
+
+}
+
+.validation p{
+border: 1px solid black;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: rgb(95, 67, 67);
+color: rgb(255, 255, 255);
+}
+

@@ -1,0 +1,45 @@
+.Modal {
+  width: 100%;
+  height: 100vh;
+  inset: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  &_posts {
+    background-color: aliceblue;
+    min-height: 120px;
+    padding: 1.2em 3em;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: blue 0px 0px 0px 2px inset,
+      rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px,
+      rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px,
+      rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px,
+      rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    text-align: center;
+  }
+  &_close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    cursor: pointer;
+  }
+  &_delete {
+    padding: 0.5em;
+    border-top: 8px solid rgb(255, 85, 85);
+    border-right: 8px solid rgb(40, 116, 40);
+    border-bottom: 0;
+    border-left: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 900;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+}

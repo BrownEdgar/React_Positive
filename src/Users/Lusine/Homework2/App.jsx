@@ -27,7 +27,7 @@ export default function App() {
           <div key={elem.id} className='App-container'>          
           <p >{elem.name}</p>
           <p>{elem.email}</p>
-          <span onClick={() => deleteStaff(elem.id)}>&#10026;</span>
+          <span onClick={() => deleteStaff(elem.id)}>&#10008;</span>
           </div>
 
           

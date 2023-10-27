@@ -9,12 +9,12 @@ export default function App() {
 
   useEffect(() => {
     axios({
-        baseURL: "https://jsonplaceholder.typicode.com/",
-        url: 'users'
+      baseURL: "https://jsonplaceholder.typicode.com/",
+      url: 'users'
     })
-    .then(res => setUsers(res.data))
+      .then(res => setUsers(res.data))
+  }, [])
 
-    },[])
   return (
     <div className='App'>
       <Child users={users} />

@@ -1,91 +1,90 @@
-.Modal{
-    width: 90%;
-    margin: 20px auto;
-    padding: 1em;
-&-content{
+.Modal {
+  width: 90%;
+  margin: 20px auto;
+  padding: 1em;
+  &-content {
     width: 500px;
     height: 350px;
     margin: 20px;
     display: inline-block;
     padding: 12px;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     font-size: 20px;
     font-weight: 700;
     padding: 24px;
     vertical-align: top;
     background: linear-gradient(to top, black, 20%, cyan);
     line-height: 1.3;
-    
-     }
-     p{
-        color: rgb(73, 73, 75);
-     }
-     
-.Modal-par{
+  }
+  p {
+    color: rgb(73, 73, 75);
+  }
+
+  .Modal-par {
     text-align: center;
     font-size: 25px;
     margin-bottom: 15px;
-   
-}
-span{
+  }
+  span {
     color: rgb(59, 59, 60);
     font-weight: 900;
     margin-right: 10px;
-     }
-.title{
+  }
+  .title {
     margin-bottom: 10px;
-}
-.symbol{
+  }
+  .symbol {
     margin-top: 15px;
     float: right;
     cursor: pointer;
     font-weight: 900;
     color: rgb(141, 29, 29);
     font-size: 30px;
+  }
 }
-
-}
-.App{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba($color: #000000, $alpha: 0.7);
-&-content{
+.App {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  &-content {
     background-color: aliceblue;
     padding: 1.2em 3em;
     border-radius: 12px;
     min-height: 120px;
     position: relative;
-button{
-    width: 150px;
-    height: 50px;
-    margin: 50px;
-    padding: .6em 1em;
-    border-radius: 10px;
-    border: 0;
-    background-color: #1d1d1d;
-    color: whitesmoke;
-    cursor: pointer;
-    box-shadow: rgb(66, 68, 68) 0px 20px 30px -10px;
-    transition: .5s;
-}
-button:hover{
-    scale: 1.2;
-    transition: scale .5s;
-    background-color: cyan;
-    color: #141313;
-    font-weight: 900;
-    font-size: 16px;
- }
-}
-p{
+    button {
+      width: 150px;
+      height: 50px;
+      margin: 50px;
+      padding: 0.6em 1em;
+      border-radius: 10px;
+      border: 0;
+      background-color: #1d1d1d;
+      color: whitesmoke;
+      cursor: pointer;
+      box-shadow: rgb(66, 68, 68) 0px 20px 30px -10px;
+      transition: 0.5s;
+    }
+    button:hover {
+      scale: 1.2;
+      transition: scale 0.5s;
+      background-color: cyan;
+      color: #141313;
+      font-weight: 900;
+      font-size: 16px;
+    }
+  }
+  p {
     font-size: 25px;
     font-weight: 700;
-    
- }
+  }
 }

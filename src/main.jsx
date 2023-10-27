@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import App from './Users/Edgar/props_Children/App'
+import App from './Users/Hayk/homework4/App'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root'))

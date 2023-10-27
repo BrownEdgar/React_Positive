@@ -59,7 +59,7 @@ Child.propTypes = {
         name: PropTypes.string.isRequired,
         catchPhrase: PropTypes.string.isRequired,
         bs: PropTypes.string.isRequired,
-      }).isRequired
+      }).isRequired,
     })
   ).isRequired
 }

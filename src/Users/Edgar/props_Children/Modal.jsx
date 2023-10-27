@@ -1,8 +1,6 @@
-
 import { useEffect } from 'react'
 import './Modal.scss'
 export default function Modal(props) {
-
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -16,12 +14,10 @@ export default function Modal(props) {
     }
   }, [])
 
-
   return (
 
     <div className='Modal'>
       <div className="Modal-content">
-
         {props.children}
       </div>
     </div>

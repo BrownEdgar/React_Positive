@@ -1,0 +1,29 @@
+.App {
+    &-container{
+        border: solid 2px rgb(44, 6, 57);
+        border-radius: 15px;
+        margin: 20px;
+        padding: 1em;
+        font-style: 2em;
+        background-image: linear-gradient(to right, #494973, #9085b7, #adadc9);
+    
+    }
+    p{
+        font-size: 20px;
+    }
+    span{
+        float: right;
+        cursor: pointer;
+        font-size: 30px;
+        transition: .8s;
+        color: rgb(43, 18, 182);
+        position: relative;
+        top: -40px;
+      }
+      
+  span:hover{
+    color: rgb(223, 234, 171);
+    scale: 1.5;
+    transition: scale .8s;
+  }  
+}

@@ -8,37 +8,53 @@ const staff = [
   { id: 5, name: "Leo", surname: "Yohan", salary: 790_000, gender: 'male' },
 ]
 
+
 export default function App() {
-  const [users, setUsers] = useState(staff)
+  const [users, setUsers] = useState({
+    original: staff,
+    temp: staff,
+  })
 
   const handleDelete = (index) => {
     console.log(index);
     setUsers(users.toSpliced(index, 1))
   }
 
-  const mans = () => {
-    setUsers(users.filter((elem) => elem.gender === 'male'))
-  }
-  const womens = () => {
-    setUsers(users.filter((elem) => elem.gender === 'female'))
-  }
-  const all = () => {
-    setUsers(staff)
+  const filtered = (gender) => {
+    let result;
+    (gender === 'all')
+      ? result = staff
+      : result = users.original.filter((elem) => elem.gender === gender)
+    setUsers({
+      ...users,
+      temp: result
+    })
   }
 
-
+  const changename = (username) => {
+    const result = users.original.map(user => {
+      if (user.name === username) {
+        user.name = 'valod'
+      }
+      return user
+    })
+    setUsers({
+      ...users,
+      original: result
+    })
+  }
 
   return (
     <div className="App">
       <h1 className='title'>Our staff and some options</h1>
-      <button className='male' onClick={() => mans()}>Mans</button>
-      <button className='all' onClick={() => all()}>All of them</button>
-      <button className='female' onClick={() => womens()}>Womens</button>
+      <button onClick={() => filtered('male')}>Mans</button>
+      <button onClick={() => filtered('all')}>All of them</button>
+      <button onClick={() => filtered('female')}>Womens</button>
+      <button onClick={() => changename("Karen")}>change name</button>
       <div className="container">
         {
-          users.map((elem, index) => {
+          users.temp.map((elem, index) => {
             return (
-
               <div key={elem.id}>
                 <h2>{elem.name}  {elem.surname}</h2>
                 <span onClick={() => handleDelete(index)}>&#10006;</span>
@@ -52,3 +68,5 @@ export default function App() {
     </div>
   )
 }
+
+

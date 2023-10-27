@@ -1,0 +1,56 @@
+.App{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    font-size: 2em;
+
+    form{
+        width: 400px;
+        padding: 1em;
+        margin: 0 auto;
+        input{
+            padding: 1em;
+            width: 100%;
+            margin: 10px auto;
+            border: 1px solid white;
+            background-color: black;
+            border-radius: 15px;
+            color: rgb(255, 0, 136);
+            font-size: 18px;
+        }
+        label{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: rgb(255, 0, 234);
+        }
+    }
+    .users{
+        width: 50%;
+        margin: 20px auto;
+        padding: 1em;
+        p{
+            border: 2px solid teal;
+            padding: 12px;
+            margin: 12px;
+            font-size: 20px;
+        }
+    }
+}
+body{
+    background-color: black;
+}
+h3{
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(255, 0, 234);
+    margin: 5px;
+    padding: 12px;
+    border: 1px solid rgb(255, 0, 234);
+    // width: auto;
+}
+
+hr{
+    color: white;
+}

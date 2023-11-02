@@ -10,7 +10,7 @@ export default function App() {
     const { name, password } = e.target;
     const obj = {
       id: Date.now(),
-      user: name.value,
+      name: name.value,
       password: password.value,
     };
     setUsers([...users, obj]);
@@ -21,6 +21,7 @@ export default function App() {
     e.preventDefault();
     const value = e.target.search.value;
     const result = users.some((user) => user.name === value);
+    console.log(result)
     result ? alert("such a person exists") : alert("there is no such person");
     e.target.reset();
   };
@@ -32,7 +33,7 @@ export default function App() {
         <label htmlFor="name">user</label>
         <input type="text" id="name" required />
         <label htmlFor="password">password</label>
-        <input type="password" id="password" />
+        <input type="password" id="password" required />
         <input type="submit" value="add" />
       </form>
       <Form handleChange={handleChange} />

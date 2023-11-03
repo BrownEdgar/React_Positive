@@ -1,0 +1,25 @@
+.App{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 120px auto;
+    height: 300px;
+    .item{
+        flex-grow: 1;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid teal;
+      
+    }
+    form{
+       width: 100%; 
+       margin: 20px;
+       input{
+        width: 100%;
+        margin: 6px auto;
+        padding: 6px;
+       }
+    }
+}

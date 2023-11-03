@@ -34,7 +34,7 @@ export default function App() {
           return (
             <li key={user}>{user} <span onClick={() => {
               toggleModal()
-              saveUserName(user)
+              saveUserName(users)
             }}>X</span></li>
           )
         })}

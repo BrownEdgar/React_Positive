@@ -1,43 +1,39 @@
 .App {
-  width: 70%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 200px auto;
   padding: 2em;
-
-  form {
-    width: 400px;
-    font-size: 30px;
-    padding: 1em;
-    margin: 0 auto;
-    input {
-      padding: 1em;
-      width: 100%;
-      margin: 10px auto;
-      border: 1px solid teal;
-      border-radius: 12px;
-    }
-    label {
-      font-size: 20px;
-      text-transform: capitalize;
+  background-color: #111;
+  color: #fff;
+  &-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    height: 60px;
+    select {
+      float: right;
+      padding: 6px 12px;
+      font-size: 16px;
     }
   }
-  .users {
-    width: 50%;
-    margin: 20px auto;
+  &-content {
     padding: 1em;
-    p {
-      border: 2px solid teal;
-      padding: 12px;
-      margin: 12px;
-      font-size: 20px;
+    width: auto;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: width 200ms;
+    h2 {
+      margin-bottom: 16px;
+      color: rgb(104, 134, 225);
     }
   }
-  pre {
-    margin: 20px;
-    border-radius: 20px;
-    padding: 1em;
-    color: orange;
-    background-color: #111;
-    font-size: 20px;
-    font-family: "Courier New", Courier, monospace;
+  &-link {
+    margin-top: 20px;
+    padding: 6px;
+    cursor: pointer;
+    background: #fff;
+    color: #111;
+    font-weight: 500;
+    display: block;
+    width: 120px;
+    border-radius: 4px;
   }
 }

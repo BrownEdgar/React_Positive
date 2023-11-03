@@ -1,0 +1,40 @@
+.Modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    &-content {
+        background-color: aliceblue;
+        padding: 1.2em 3em;
+        border-radius: 12px;
+        min-height: 120px;
+        position: relative;
+    }
+    &-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 4px;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        &::before {
+            content: "X";
+        }
+    }
+    button.delete {
+        margin-top: 30px;
+        padding: 0.6em 1em;
+        background-color: #ff0505;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+    }
+}

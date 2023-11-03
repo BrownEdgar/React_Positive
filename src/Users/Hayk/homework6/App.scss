@@ -40,13 +40,13 @@
     table {
       width: 96%;
       border-collapse: collapse;
+      tr.color {
+        background-color: rgb(86, 86, 86);
+      }
       td,
       th {
         padding: 0.4em;
         border: 1px solid gray;
-        .color {
-          background-color: black;
-        }
       }
       .fa-solid {
         float: right;

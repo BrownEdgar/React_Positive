@@ -27,10 +27,10 @@ export default function App() {
       it: it.value,
     };
 
-    // const result = users.some((user) => user.email === value.email);
-    // result
-    // ? alert("sorry, well, there is already such an email")
-    setUsers([...users, value]);
+    const result = users.some((user) => user.email === value.email);
+    result
+      ? alert("sorry, well, there is already such an email")
+      : setUsers([...users, value]);
   };
 
   const onSubmit = (e) => {
@@ -113,7 +113,7 @@ export default function App() {
             <input type="submit" value="add" />
           </div>
         </form>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="formik">
           <input type="search" id="search" />
           <input type="submit" />
         </form>

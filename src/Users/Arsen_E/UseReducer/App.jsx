@@ -7,7 +7,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialValues)
 
  const handleClick = () => {
-   dispatch({type:'ADD_ELEM',payload:444})
+   dispatch({type:'ADD_ELEM',payload:555})
  }
   
  const handleDelete = () => {

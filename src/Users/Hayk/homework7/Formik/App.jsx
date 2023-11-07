@@ -20,17 +20,18 @@ export default function App() {
   const [users, setUsers] = useState([]);
   const [userId, setUserId] = useState(null);
 
-  const handleSubmit = (values) => {
+  const handleSubmit = (values, formik) => {
     const result = users.some((user) => user.email === values.email);
 
     if (result) {
-      alert("this email already exists");
+      formik.setFieldError("email", "email exist");
     } else {
       const newUser = {
         id: Date.now(),
         ...values,
       };
       setUsers([...users, newUser]);
+      formik.resetForm();
     }
   };
 

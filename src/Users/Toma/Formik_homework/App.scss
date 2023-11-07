@@ -1,0 +1,68 @@
+form{
+    width: 450px;
+    margin: 30px auto;
+    padding: 1em;
+    border-radius: 20px;
+    border: 2px solid rgb(128, 128, 128);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    label{
+        font-size: 20px;
+        
+    }
+    input{
+        padding: 10px;
+        border: 1px solid gray;
+        width: 100%;
+        margin: 10px 0 20px;
+        font-size: 20px;
+        border-radius: 10px;
+       
+    }
+    .error{
+       color: red; 
+    }
+    .save{
+        background-color: rgb(99, 217, 99);
+        color: white;
+    }
+    p{
+        padding-bottom: 15px;
+        font-size: 14px;
+       }
+       .content{
+        width: 300px;
+        height: 300px;
+        border: 1px solid grey;
+        background-color: black;
+       
+       }
+   }
+   .content{
+    width: 300px;
+    height: 160px;
+    border: 1px solid grey;
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    line-height: 2.5;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 15px;
+span{
+    font-weight: 700;
+    background-color: aqua;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: rgb(123, 189, 220);
+    margin-right: 10px;
+    
+}
+i{
+    float: right;margin-top: 12px;
+    font-size: 20px;
+    color: rgb(71, 173, 173);
+}
+    
+}

@@ -5,8 +5,11 @@ import './App.scss'
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const handleDeveloper = () =>{
-    dispatch({type: ADD_DEVELOPER,})
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    const {username} = e.target;
+    dispatch({type: ADD_DEVELOPER,payload: username.value})
+    e.target.reset()
   }
   const handleShuffleArray = () =>{
     dispatch({type: SHUFFLE_ARRAY })
@@ -22,8 +25,11 @@ export default function App() {
   return (
     <div className='App'>
       <h1>State: {JSON.stringify(state)}</h1>
+      <form onSubmit={handleSubmit}>
       <label>Add developer</label>
-      <input onClick={handleDeveloper}/> 
+      <input type = 'text' id='username'/> 
+      <input type = 'submit' value='save'/> 
+      </form>
       <button onClick={handleShuffleArray}>Shuffle Array</button>
       <button onClick={handleAddRandomNumber}>Add Random Number</button>
       <button onClick={handleChangeUsername}>Change Username</button>

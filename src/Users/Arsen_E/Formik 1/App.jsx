@@ -12,7 +12,7 @@ const initialValues = {
 
 const validationSchema = object({
   email: string().email(),
-  username: string().matches(/^[A-Z]/, "cmdskpmp"),
+  username: string().matches(/^[A-Z]/, "Please,write to upperCase"),
   password: string().min(8).max(16),
 });
 
@@ -20,54 +20,61 @@ export default function App() {
   const [users, setUsers] = useState([]);
   const [userId, setUserId] = useState(null);
 
-  const handleSubmit = (values, formik) => {
+  const handleSubmit = (values) => {
     const result = users.some((user) => user.email === values.email);
 
     if (result) {
-      formik.setFieldError("email", "email exist");
+      Formik.setFieldError('email', 'Email already exists');
     } else {
       const newUser = {
         id: Date.now(),
         ...values,
-      };
-      setUsers([...users, newUser]);
-      formik.resetForm();
+      }
+      setUsers([...users, newUser])
     }
-  };
+}
 
-  const handleUserId = (id) => {
+const handleUserId = (id) => {
     userId === id ? setUserId(null) : setUserId(id);
-  };
+}
 
   return (
-    <div className="Container">
-      <div className="Users">
+
+<div className="App">
+
+      <div className="Formiks">
         <Formik
           initialValues={initialValues}
           validateOnBlur={true}
           validateOnChange={false}
           onSubmit={handleSubmit}
           validationSchema={validationSchema}
-        >
-          <Form>
-            <label htmlFor="email">Email</label>
-            <Field type="email" name="email" id="email" />
-            <ErrorMessage name="email" component={"p"} className="erorr" />
-            <label htmlFor="username">Username</label>
-            <Field type="text" name="username" id="username" />
-            <ErrorMessage name="username" component={"p"} className="erorr" />
-            <label htmlFor="password">Password</label>
-            <Field type="password" name="password" id="password" />
-            <ErrorMessage name="password" component={"p"} className="erorr" />
-            <input type="submit" value="Save" />
+   >
+
+<Form>
+      
+      <label htmlFor="email">Email</label>
+      <Field type="email" name="email" id="email" />
+      <ErrorMessage name="email" component={"p"} className="erorr" />
+      
+      <label htmlFor="username">Username</label>
+      <Field type="text" name="username" id="username" />
+      <ErrorMessage name="username" component={"p"} className="erorr" />
+      
+      <label htmlFor="password">Password</label>
+      <Field type="password" name="password" id="password" />
+      <ErrorMessage name="password" component={"p"} className="erorr" />
+       <input type="submit" value="Save" />
+      
           </Form>
+      
         </Formik>
       </div>
       <hr />
-      <div className="Box">
+      <div className="Container">
         {users.map((elem) => {
           return (
-            <div key={elem.id} className="Box_elements">
+            <div key={elem.id} className="Container_children">
               <p>
                 <span>email:</span>
                 {elem.email}
@@ -81,18 +88,17 @@ export default function App() {
                 <span className="password">
                   {elem.id === userId ? elem.password : "*".repeat(10)}
                 </span>
-                <i
-                  onClick={() => handleUserId(elem.id)}
-                  className={classNames("fa-solid", {
-                    "fa-eye": elem.id !== userId,
-                    "fa-eye-slash": elem.id === userId,
-                  })}
-                ></i>
-              </p>
-            </div>
-          );
+   <i  
+   onClick={() => handleUserId(elem.id)}            
+    className={classNames("fa-solid", {
+   "fa-eye": elem.id !== userId,
+  "fa-eye-slash": elem.id === userId,
+})}>
+
+</i>
+   </p></div>
+  );
         })}
       </div>
-    </div>
-  );
-}
+      </div>
+  )}

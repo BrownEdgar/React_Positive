@@ -6,12 +6,8 @@ import "./App.scss";
 
 export default function App() {
   const [state, dispatch] = useReducer(reduce, initialState);
-  console.log(state);
-  const [inputValue, setInputValue] = useState("");
 
-  const handleClick = () => {
-    dispatch({ type: ADD_NAME, payload: inputValue });
-  };
+
 
   const handleChange = () => {
     dispatch({ type: USER_NAME_CHANGE });
@@ -22,14 +18,14 @@ export default function App() {
 
       <Formik
         initialValues={{ name: "" }}
-        onSubmit={(values) => setInputValue(values.name)}
+        onSubmit={(values) => dispatch({ type: ADD_NAME, payload: values.name })}
         validateOnBlur={true}
         validateOnChange={false}
       >
         <Form>
           <h1>Developers: {JSON.stringify(state.developers)}</h1>
           <Field type="text" name="name" id="name" />
-          <input type="submit" value="add name" onClick={handleClick} />
+          <input type="submit" value="add name" />
         </Form>
       </Formik>
       <div className="box">
@@ -44,6 +40,6 @@ export default function App() {
           add random number
         </button>
       </div>
-    </div>
+    </div >
   );
 }

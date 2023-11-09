@@ -3,10 +3,8 @@ import useFetchData from './UseFetchData'
 
 export default function App() {
   const [data] = useRandom({
-    type: 'number',
+    type: 'string',
     count: 10,
-    max: 4800,
-    min: 4000
   })
   return (
     <div>

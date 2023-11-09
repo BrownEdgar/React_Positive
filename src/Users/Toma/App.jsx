@@ -13,6 +13,7 @@ export default function App() {
   ])
   return (
     <div className='App'>
+     
       <h1 className='App-title'>Our actors</h1>
       <div className='App-container' style={{background: '#2d2d2d'}}>
       {data.map(elem =>{

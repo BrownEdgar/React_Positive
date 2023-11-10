@@ -1,0 +1,18 @@
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+    background-color: #222;
+    ul{
+     height: 100%;   
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 1em;
+     width: 40%;
+     color: #fff;
+    }
+}

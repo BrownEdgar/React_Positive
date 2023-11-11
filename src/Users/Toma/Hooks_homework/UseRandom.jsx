@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 
-
 export default function useRandom(options) {
   const [numbers, setNumbers] = useState([]);
 

@@ -1,0 +1,19 @@
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em;
+    background-color: #222;
+    ul{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        color: #fff;
+
+    }
+}

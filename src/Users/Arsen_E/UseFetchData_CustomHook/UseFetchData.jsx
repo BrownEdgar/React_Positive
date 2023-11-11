@@ -1,21 +1,17 @@
-import axios from 'axios'
-import { useState,useEffect } from "react";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 export default function UseFetchData(options) {
- const [data,setData] = useState([])
- 
- useEffect(() => {
+  const [data, setData] = useState([]);
 
-   axios(options.fetchUrl,{
-    params:{
-      _limit:options.limit,
-      _start:options.start,
-    }
-   })
- .then(res=>setData(res.data))
+  useEffect(() => {
+    axios(options.fetchUrl, {
+      params: {
+        _limit: options.limit,
+        _start: options.start,
+      },
+    }).then((res) => setData(res.data));
+  }, [options.fetchUrl, options.limit, options.start]);
 
-},[options.fetchUrl,options.limit,])
- 
- 
- return [data]
+  return [data];
 }

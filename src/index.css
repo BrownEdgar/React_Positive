@@ -24,3 +24,12 @@ ul {
   list-style: none;
 }
 
+li {
+  border: 2px solid #000;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin: 10px;
+}

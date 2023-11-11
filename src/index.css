@@ -24,6 +24,7 @@ ul {
   list-style: none;
 }
 
+<<<<<<< HEAD
 .ErrorPage {
   height: calc(100vh - 100px);
   display: flex;
@@ -37,3 +38,5 @@ ul {
 .ErrorPage h1 {
   font-weight: 200;
 }
+=======
+>>>>>>> refs/remotes/origin/main

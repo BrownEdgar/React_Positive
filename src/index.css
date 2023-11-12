@@ -1,7 +1,7 @@
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Teko', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
 
 * {
   margin: 0;
@@ -9,10 +9,8 @@ font-family: 'Teko', sans-serif; */
   box-sizing: border-box;
 }
 
-
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -23,6 +21,7 @@ a {
 ul {
   list-style: none;
 }
+<<<<<<< HEAD
 
 li {
   border: 2px solid #000;
@@ -62,3 +61,5 @@ li {
   justify-content:  center;
   align-items: center;
 }
+=======
+>>>>>>> 89ece0c66f6aa1965e71855271a340885de247f0

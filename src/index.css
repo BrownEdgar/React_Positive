@@ -33,3 +33,32 @@ li {
   width: 400px;
   margin: 10px;
 }
+
+.Comments{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Comments > div {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.Comments>div span {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid #000;
+  background-color: yellow;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}

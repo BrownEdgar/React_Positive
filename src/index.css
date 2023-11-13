@@ -1,7 +1,7 @@
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Teko', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
 
 * {
   margin: 0;
@@ -9,10 +9,8 @@ font-family: 'Teko', sans-serif; */
   box-sizing: border-box;
 }
 
-
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -23,4 +21,45 @@ a {
 ul {
   list-style: none;
 }
+<<<<<<< HEAD
 
+li {
+  border: 2px solid #000;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin: 10px;
+}
+
+.Comments{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Comments > div {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.Comments>div span {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid #000;
+  background-color: yellow;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+=======
+>>>>>>> 89ece0c66f6aa1965e71855271a340885de247f0

@@ -6,6 +6,8 @@ export default function useFetchData(options) {
 
   useEffect(() => {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       axios(options.baseURL + options.url, {
           params: {
             _limit: options.limit,
@@ -15,6 +17,7 @@ export default function useFetchData(options) {
         .then(res => setData(res.data))
 }, [options.baseURL, options.limit, options.start, options.url])
 =======
+>>>>>>> refs/remotes/origin/main
     axios(options.baseURL + options.url, {
       params: {
         _limit: options.limit,
@@ -23,7 +26,10 @@ export default function useFetchData(options) {
     })
       .then(res => setData(res.data))
   }, [options.baseURL, options.limit, options.start, options.url])
+<<<<<<< HEAD
+=======
 >>>>>>> e6fe679fbb36b3f23fdc87c963f9c09cd93eb85f
+>>>>>>> refs/remotes/origin/main
 
   return [data];
 }

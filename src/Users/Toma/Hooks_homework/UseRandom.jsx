@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 export default function useRandom (options)  {
@@ -16,6 +18,7 @@ useEffect(() => {
 
   
 =======
+>>>>>>> refs/remotes/origin/main
 export default function useRandom(options) {
   const [numbers, setNumbers] = useState([]);
 
@@ -29,7 +32,10 @@ export default function useRandom(options) {
 }
 
 
+<<<<<<< HEAD
+=======
 >>>>>>> e6fe679fbb36b3f23fdc87c963f9c09cd93eb85f
+>>>>>>> refs/remotes/origin/main
 
 
 

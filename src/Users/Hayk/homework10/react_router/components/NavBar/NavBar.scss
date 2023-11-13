@@ -1,0 +1,22 @@
+.Menu {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  ul {
+    display: flex;
+    margin-right: 50px;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    .active {
+      color: red;
+      font-size: 18px;
+      font-weight: 800;
+      border-bottom: 1px solid red;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.Navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #696868;
+  color: white;
+  box-shadow: 0px 3px 17px grey;
+  ul {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .active {
+    color: red;
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: 1px solid red;
+  }
+}

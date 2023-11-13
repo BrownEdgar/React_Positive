@@ -1,0 +1,46 @@
+.users{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: auto auto;
+}
+.users div{
+    cursor: pointer;
+    width: 310px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    position: relative;
+    background-color: #222;
+    color: rgb(206, 203, 203);
+   
+}
+h1{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+pre{
+    background-color: #222;
+    color: rgb(206, 203, 203);
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 700px;
+    white-space: pre-wrap;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 45px 65px rgba(8, 7, 7, 0.5), 0 35px 22px rgba(0,0,0,0.16);
+    cursor: pointer;
+ }
+ .ErrorPage{
+    height: calc(100vh-100px);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    flex-direction: column;
+    gap: 5px;
+ }

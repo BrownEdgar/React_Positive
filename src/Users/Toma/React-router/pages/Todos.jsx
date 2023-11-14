@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import './todos.css'
+import { useEffect, useState } from 'react'
+import './Todos.css'
 
 export default function Todos() {
 const [todos, setTodos] = useState([]);

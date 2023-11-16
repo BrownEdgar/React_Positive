@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-import "./Users.scss";
+// import "./Users.scss";
 
 export default function Posts() {
   const [post, setPost] = useState([]);

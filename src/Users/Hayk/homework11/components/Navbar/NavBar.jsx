@@ -1,22 +1,22 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
-import { COMMENTS, POSTS, TODOS, USERS } from "../routes/routes";
+import ROUTES from "../../routes/routes";
 
 export default function NavBar() {
   return (
     <div className="Navbar">
       <ul>
         <li>
-          <NavLink to={COMMENTS}>Comments</NavLink>
+          <NavLink to={ROUTES.COMMENTS}>Comments</NavLink>
         </li>
         <li>
-          <NavLink to={POSTS}>Posts</NavLink>
+          <NavLink to={ROUTES.POSTS}>Posts</NavLink>
         </li>
         <li>
-          <NavLink to={TODOS}>Todos</NavLink>
+          <NavLink to={ROUTES.TODOS}>Todos</NavLink>
         </li>
         <li>
-          <NavLink to={USERS}>Users</NavLink>
+          <NavLink to={ROUTES.USERS}>Users</NavLink>
         </li>
       </ul>
     </div>

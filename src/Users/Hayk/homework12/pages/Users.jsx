@@ -1,16 +1,16 @@
 import axios from "axios";
-import "./Users.scss";
 import { Link, useLoaderData } from "react-router-dom";
-
+import "./User.scss";
 export default function Users() {
   const users = useLoaderData();
-
   return (
     <div className="Users">
       {users.map((elem) => {
         return (
-          <Link key={elem.id} className="comments" to={`${elem.id}`}>
-            <h2>{elem.name}</h2>
+          <Link key={elem.id} className="Users_users" to={`${elem.id}`}>
+            <div>
+              <h2>{elem.name}</h2>
+            </div>
           </Link>
         );
       })}
@@ -19,10 +19,9 @@ export default function Users() {
 }
 
 const usersLoader = () => {
-  return axios
-    .get("https://jsonplaceholder.typicode.com/users?_limit=10")
-    .then((res) => res.data);
+  return axios("https://jsonplaceholder.typicode.com/users").then(
+    (res) => res.data
+  );
 };
-
 // eslint-disable-next-line react-refresh/only-export-components
 export { usersLoader };

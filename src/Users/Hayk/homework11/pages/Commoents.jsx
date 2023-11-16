@@ -1,20 +1,20 @@
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-import "./Users.scss";
+// import "./Users.scss";
 
 export default function Commoents() {
-  const [com, setCom] = useState([]);
+  const [commoents, setCommoents] = useState([]);
   useEffect(() => {
     axios({
       baseURL: "https://jsonplaceholder.typicode.com/",
       url: "comments",
-    }).then((res) => setCom(res.data));
+    }).then((res) => setCommoents(res.data));
   }, []);
 
   return (
-    <div className="Users">
-      <pre>{JSON.stringify(com, null, 1)}</pre>
+    <div className="Commoents">
+      <pre>{JSON.stringify(commoents, null, 1)}</pre>
     </div>
   );
 }

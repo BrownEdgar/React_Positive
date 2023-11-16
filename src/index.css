@@ -21,45 +21,34 @@ a {
 ul {
   list-style: none;
 }
-<<<<<<< HEAD
 
-li {
-  border: 2px solid #000;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+form {
   width: 400px;
-  margin: 10px;
+  margin: 40px auto;
 }
 
-.Comments{
+input {
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.Comments > div {
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 12px;
+.flex>div {
+  flex-basis: 27%;
   border: 1px solid grey;
-  position: relative;
+  text-align: center;
 }
 
-.Comments>div span {
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  font-weight: 700;
-  border: 2px solid #000;
-  background-color: yellow;
-  display: flex;
-  justify-content:  center;
-  align-items: center;
+.flex>div img {
+  width: 300px;
 }
-=======
->>>>>>> 89ece0c66f6aa1965e71855271a340885de247f0

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Link, useLoaderData } from "react-router-dom";
 import "./User.scss";
+
 export default function Users() {
   const users = useLoaderData();
   return (

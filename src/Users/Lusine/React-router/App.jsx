@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
-
-import About from './pages/About'
-import Home from './pages/Home'
-import ErrorPage from './pages/ErrorPage'//?
 import Blog from './pages/Blog'
-import  Contact from './pages/Contact'
-
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
 import ROUTES from './routes/routes'
+import ErrorPage from './pages/ErrorPage'//?
+import  Contact from './pages/Contact'
+import { useState} from 'react'
 import Layouts from './components/Navbar/Layouts/Layouts' //-
+import { lazy} from 'react'
+
+const Home = lazy(() => import ('./pages/Home'))
+const About = lazy(() => import ('./pages/About'))
 
 export default function App() {
   const [users, setUsers] = useState([]) //+

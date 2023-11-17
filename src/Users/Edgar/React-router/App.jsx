@@ -1,28 +1,37 @@
-import About from './pages/About'
-import Home from './pages/Home'
+
 import Blog from './pages/Blog'
-import Navbar from './components/Navbar/Navbar'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import ROUTES from './routes/routes'
 import ErrorPage from './pages/ErrorPage'
 import Contact from './pages/Contact'
 import { useState } from 'react'
+import Layouts from './Layouts'
+import { lazy } from 'react'
+
+
+const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
 
 export default function App() {
   const [users, setUsers] = useState([])
-  console.log(users)
 
-  return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path={ROUTES.HOME} element={<Layouts />}>
+        <Route index element={<Home />} />
         <Route path={ROUTES.ABOUT} element={<About setUsers={setUsers} />} />
         <Route path={ROUTES.BLOG} element={<Blog users={users} />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
         <Route path='*' element={<ErrorPage />} />
-      </Routes>
+      </Route>
+    )
+  )
 
+
+
+  return (
+    <div>
+      <RouterProvider router={router} />
     </div>
   )
 }

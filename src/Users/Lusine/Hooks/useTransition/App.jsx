@@ -1,15 +1,14 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useTransition } from 'react'
+import data from './data.json'
 
 
 export default function App() {
-    const [albums, setAlbums] = useState([])
+    const [albums, setAlbums] = useState(data)
     const [query, setQuery] = useState("")
-    useEffect(() => {
-        axios("https://jsonplaceholder.typicode.com/photos")
-        .then(res => setAlbums(res.data))
-  
-    }, [])
+    const []
+    
+
     const handleChange = (e) => {
         setQuery(e.target.value)
 
@@ -27,12 +26,11 @@ export default function App() {
         <hr />
         <div className='flex'>
             {
-                filteredPhotos(query)
-                .map(elem => {
+                albums.map(elem => {
                     return (
                         <div key={elem.id}>
-                            <img src={elem.url} />
-                            <h2>{elem.title}</h2>
+                            <h2>{elem.first_name}</h2>
+                            <span>{elem.email}</span>
 
                         </div>
                     )

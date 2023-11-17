@@ -1,27 +1,35 @@
-import Child from "./Child";
-import { useMemo, useState, useCallback } from 'react'
+import { useState, useMemo,  } from 'react'
+import './Child.scss';
+import Child  from './Child'
 
 export default function App() {
-    const [value, setValue] = useState("");
-    console.log('App render');
+    const [value, setValue] = useState(1);
+    const [timeOutId, setTimeOutId] = useState(null)
+    
+    
     const handleChange = (e) => {
+      if(timeOutId) {
+        clearTimeout(timeOutId)
+      }
+
+      const s = setTimeout(() => {
         setValue(e.target.value)
+      }, 500);
+      setTimeOutId(s)
+     
     }
-    const handleClick = useCallback(
-        () => {
-            console.log("Click");
-        }, [])
 
+    const child = useMemo(() => <Child value={value} />, [value])
 
-    const child = useMemo(() => <Child handleClick={handleClick} />, 
-    [handleClick])
-  
   return (
     <div>
+     
+      <hr />
+      <h1>Value: {value}</h1>
         <form>
-            <input type="text" onChange={handleChange} value={value} />
+            <input type="range" min={1} max={20000} step={10} onChange={handleChange} />
         </form>
-        {child}
+        {child} 
     </div>
   )
 }

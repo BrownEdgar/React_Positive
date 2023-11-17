@@ -59,3 +59,22 @@ li {
   justify-content:  center;
   align-items: center;
 }
+
+.flex{
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex>div{
+  flex-basis: 27%;
+  border: 1px solid grey;
+  align-items: center;
+
+}
+
+.flex>div img{
+  width: 300px;
+}

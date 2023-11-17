@@ -5,6 +5,8 @@ export default function App() {
 const [value, setValue] = useState(1)
 const [timeOutId, setTimeOutId] =useState(null)
 
+const [count, setCount] = useState(0)
+
 const handleChange = (e) => {
     if (timeOutId) {
         clearTimeout(timeOutId)
@@ -15,7 +17,8 @@ const handleChange = (e) => {
      setTimeOutId(s)
 
     }
-  const child = useMimo(() => <child value={value}/>, [value])
+
+  const child = useMemo(() => <child value={value}/>, [value])
 
     return (
         <div>

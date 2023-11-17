@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
-<<<<<<< HEAD
-import App from "./Users/Lusine/Homework21_useTransition/App";
+import App from "./App";
 import "./index.css";
 =======
 import App from "./Users/Toma/Homework_21/App";

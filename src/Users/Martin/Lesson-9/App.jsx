@@ -5,6 +5,8 @@ export default function App() {
   const [data,
     setData] = useState([]);
 
+    console.log('test');
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users?_limit10")
       .then(res => res.json())

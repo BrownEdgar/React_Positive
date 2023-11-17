@@ -20,6 +20,7 @@ a {
 
 ul {
   list-style: none;
+<<<<<<< HEAD
 }
 li {
   border: 2px solid #000;
@@ -77,4 +78,6 @@ li {
 
 .flex>div img{
   width: 300px;
+=======
+>>>>>>> 3c9ca934cbb78ff7f8df8dcebb2e09cfeccab29c
 }

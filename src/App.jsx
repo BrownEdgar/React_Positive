@@ -1,19 +1,13 @@
-import { useState } from 'react'
-import Blog from './components/Blog'
-import './App.css'
+import { useSelector } from "react-redux"
 
-function App() {
-  const [data, setData] = useState(["Jhon", "Leonid", "Spartak", "Sebastian"]);
+export default function App() {
+const state = useSelector((state)=>state);
+ console.log(state);
 
-  const handleDelete = (index) => {
-    setData(data.toSpliced(index, 1))
-  }
+ return (
 
-  return (
-    <div className='App'>
-      <Blog persons={data} handleDelete={handleDelete} />
-    </div>
+<div>  
+App
+</div>
   )
 }
-
-export default App

@@ -24,12 +24,12 @@ ul {
   list-style: none;
 }
 
-li {
-  border: 2px solid #000;
-  padding: 1em;
+.ErrorPage{
+  height: calc(100vh - 100px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 400px;
-  margin: 10px;
+  font-weight: 300;
+  flex-direction: column;
+  gap: 10px;
 }

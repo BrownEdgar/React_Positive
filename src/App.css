@@ -26,14 +26,26 @@ button{
   font-size: 16px;
   font-weight: 700;
   border: 4px white;
+ transition: 0.3s ease-in-out;
+ cursor: pointer;
 }
+button:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(241, 241, 246, 0.1) 0px 4px 16px, rgba(250, 250, 254, 0.1) 0px 8px 24px, rgba(239, 239, 241, 0.1) 0px 16px 56px;
+}
+.pre{
+  display: flex;
+  justify-content: space-between;
+}
+
 pre{
+  width: 600px;
   color: aliceblue;
   margin-top: 30px;
   border: 2px solid white;
   border-radius: 10px;
   overflow-wrap: break-word;
- 
- 
-}
+  white-space: pre-wrap;
+  padding: 20px;
+ }
 

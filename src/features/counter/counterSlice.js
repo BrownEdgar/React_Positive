@@ -10,7 +10,7 @@ const counterSlice = createSlice({
      minusCount(state){
             return state - 1
         },
-    resetCount(state){
+    resetCount(){
             return 0
         }
     }

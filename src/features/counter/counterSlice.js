@@ -5,7 +5,8 @@ name:'counter',
 initialState:0,
 reducers:{
 
-}
+},
+
 })
 
 export default counterSlice.reducer

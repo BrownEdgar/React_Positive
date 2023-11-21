@@ -1,0 +1,17 @@
+.App{
+margin: 0 20px;
+max-width: 1400px;
+padding: 100px 70px 160px;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.App-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+color: #fff;
+letter-spacing: 3px;
+font-family: 'DM Sans';
+
+}

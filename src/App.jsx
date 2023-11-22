@@ -1,43 +1,34 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { addCount, minusCount, resetCount } from './features/counter/counterSlice';
-import { useEffect } from 'react';
-import axios from 'axios';
-import { addPosts } from './features/posts/postsSlice';
+import { useDispatch } from 'react-redux'
+import EpisodesList from './components/episodes/EpisodesList'
+import { addEpisodes } from './features/counter/episodes/episodesSlice'
 import './App.css'
-import { addUsers } from './features/users/usersSlice';
 
 export default function App() {
-  const counter = useSelector((state) => state.counter);
-  const posts = useSelector((state) => state.posts);
-  const users = useSelector((state) => state.users);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
-  useEffect(() => {
-    axios("https://jsonplaceholder.typicode.com/users")
-    .then(res => dispatch(addUsers(res.data)))
-   }, [])
+const addedNewEpisodes = () =>{
+  const episode = {
+    id: Math.random().toString(36).slice(2, 8),
+    title: 'New episodes title',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quaerat facilis consectetur minus saepe error officiis, sint iste numquam, assumenda exercitationem accusamus laborum quidem.',
+    categories:'Foods',
+    image: './images/episode_2.jpg'
 
-  useEffect(() => {
-    axios("https://jsonplaceholder.typicode.com/posts?_limit=28")
-    .then(res => dispatch(addPosts(res.data)))
-   }, [])
-  
+  }
+  dispatch(addEpisodes(episode))
+
+}
+
 return (
-  <div>
-    <h1>Counter:{counter}</h1>
-    <div className='button'>
-    <button onClick={() => dispatch(addCount())}>add count</button>
-    <button onClick={() => dispatch(minusCount())}>Decrement</button>
-    <button onClick={() => dispatch(resetCount())}>Reset</button>
-    </div>
-    <div className='pre'>
-    <pre>
-      {JSON.stringify(users, null, 2)}
-    </pre>
-    <pre>
-      {JSON.stringify(posts, null, 2)}
-    </pre>
-    </div>
+  <div className='App'>
+    <div className='App-header'>
+      <p>Latest episodes</p>
+      <button className='blue-btn'>View all episodes</button>
+  </div>
+    <EpisodesList />
+    <button className='blue-btn' onClick={addedNewEpisodes}>add new episodes</button>
+
+   
   </div>
   )
 }

@@ -1,51 +1,15 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.6;
+.App{
+  margin: 0 20px;
+  max-width: 1400px;
+  padding: 100px 70px 160px;
 }
-body{
-  background-color: #222;
+.App-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+color: #fff;
+font-size: 64px;
+letter-spacing: 3px;
+font-weight: 400;
 }
-
-h1{
- text-align: center;
- color: aliceblue;
-}
-.button{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
- 
-}
-button{
-  width: 100px;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 700;
-  border: 4px white;
- transition: 0.3s ease-in-out;
- cursor: pointer;
-}
-button:hover{
-  transform: scale(1.1);
-  box-shadow: rgba(241, 241, 246, 0.1) 0px 4px 16px, rgba(250, 250, 254, 0.1) 0px 8px 24px, rgba(239, 239, 241, 0.1) 0px 16px 56px;
-}
-.pre{
-  display: flex;
-  justify-content: space-between;
-}
-
-pre{
-  width: 600px;
-  color: aliceblue;
-  margin-top: 30px;
-  border: 2px solid white;
-  border-radius: 10px;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-  padding: 20px;
- }
-

@@ -1,18 +1,29 @@
-
-export default function Child({handleClick}) {
-
-    console.log("child render");
+import { useState, useEffect } from 'react'
 
 
 
+export default function Child({value}) {
+  const [numbers, setNumbers] = useState([])
+
+  console.log("Child run");
+
+  useEffect(() => {
+      const arr = new Array(1e4)
+      .fill()
+      .map(() => Math.ceil(Math.random() * 20000))
+      setNumbers(arr)
+  }, [])
+  
+  
   return (
-    <div onClick={handleClick}>
-        <h1>Child component</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam iusto ipsa. Sint eum perspiciatis et quia doloribus minus quo asperiores dignissimos nihil tempore, aliquid delectus unde quod laborum quae!
-
-        </p>
-    </div>
-    
+      <ul>
+      {
+           numbers
+           .filter(n => n >= value)
+           .map((elem, index) => <li key={index}>{elem}</li>)
+        }
+      </ul>
   )
 }
 
+// const MemoChild = memo(child)

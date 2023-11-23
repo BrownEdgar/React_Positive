@@ -1,6 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.6;
+.App {
+  margin: 0 20px;
+  max-width: 1400px;
+  padding: 100px 70px 160px;
+  font-family: 'DM Sans';
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.App-header h1 {
+  color: #fff;
+  font-size: 64px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.blue-btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  border-radius: 6px;
+  background: #118DA8;
+  border: 0;
+  cursor: pointer;
+  padding: 12px 15px 15px 20px;
 }

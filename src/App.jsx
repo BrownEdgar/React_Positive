@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import EpisodesList from './components/episodes/EpisodesList'
 import { addEpisodes } from './features/episodes/episodesSlice'
 

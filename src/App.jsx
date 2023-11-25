@@ -1,28 +1,27 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { addCount } from './feauters/counter/counterSlice'
-import { useEffect } from 'react'
-import axios from 'axios'
-import { addPosts } from './feauters/posts/postsSlice'
+
+import { useDispatch } from 'react-redux'
+import EpisodesList from './components/episodes/EpisodesList'
+import { addEpisodes } from './feauters/episodes/episodesSlice'
+
+import './App.css';
+
 
 
 export default function App() {
- const counter = useSelector((state) => state.counter)
- const posts = useSelector((state) => state.posts)
- const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-useEffect(() => {
-  axios("https://jsonplaceholder.typicode.com/posts")
-  .then(res => dispatch(addPosts(res.data)))
-}, [])
-  return (
-    <div>
-      <h1>counter: {counter}</h1>
-      <button onClick={() => dispatch(addCount(7))}>add count</button>
-      <pre>
-        {JSON.stringify(posts, null, 2)}
-      </pre>
-    </div>
-  )
+const addNewEpisodes = () => {
+  const episode = {
+    id: Math.random().toString(36).slice(2, 8),
+    title: "New episodes title here",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi in ad quaerat asperiores aspernatur hic eius, maiores eum ipsa deserunt!",
+    categories: "Foods",
+    image:'./images/episodes_1.jpg'
+
+  }
+  dispatch(addEpisodes(episode))
 }
+}
+
 
 

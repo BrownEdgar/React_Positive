@@ -1,12 +1,33 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from '../feauters/counter/counterSlice'
-import postsSlice from '../feauters/posts/postsSlice'
+import { 
+    counterSlice, 
+    episodesSlice, 
+    usersSlice,
+    todosSlice 
+} from '../feauters'
+// import mainMiddleware from '../mi';
 
+
+const checkUserMiddleWare = (store) => (next) => (action) => { 
+    console.log(new Date().toTimeString());
+    if(action.type === 'users/addUser'){
+        const users = store.getState().users;
+        if(users.includes(action.payload)){
+            return  
+        }
+    }
+    next(action)
+}
 const store = configureStore({
     reducer: {
         counter: counterSlice,
-        users: postsSlice
-    }
+        episodes: episodesSlice,
+        users: usersSlice,
+        todos: TodoList
+    },
+    middleware: (defaultMD) => defaultMD().concat(checkUserMiddleWare)
+    
 })
+
 
 export default store 

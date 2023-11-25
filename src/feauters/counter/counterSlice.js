@@ -6,8 +6,11 @@ const counterSlice = createSlice({
     reducers: {
         addCount(state, action){
             console.log(state, action);
-            return state + 1 
+            return state + action.payload 
             
+        },
+        minusCount(state){
+            return state - 1
         }
 
     }

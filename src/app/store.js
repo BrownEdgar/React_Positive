@@ -3,8 +3,10 @@ import {
     counterSlice, 
     episodesSlice, 
     usersSlice,
-    todosSlice 
+    todosSlice, 
+    postsSlice
 } from '../feauters'
+// import TodosSlice from '../feauters/todos/TodosSlice';
 // import mainMiddleware from '../mi';
 
 
@@ -18,12 +20,14 @@ const checkUserMiddleWare = (store) => (next) => (action) => {
     }
     next(action)
 }
+
 const store = configureStore({
     reducer: {
         counter: counterSlice,
         episodes: episodesSlice,
         users: usersSlice,
-        todos: TodoList
+        todos: todosSlice,
+        posts: postsSlice
     },
     middleware: (defaultMD) => defaultMD().concat(checkUserMiddleWare)
     

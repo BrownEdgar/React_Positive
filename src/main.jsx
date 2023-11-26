@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import App from './components/todos/TodoList'
+import App from './components/posts/PostList'
 import { Provider } from "react-redux";
 import store  from "./app/store";
 

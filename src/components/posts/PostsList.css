@@ -1,0 +1,38 @@
+.Posts{
+    width: 100%;
+    margin: 40px auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.posts-content{
+    width: 600px;
+    color:black;
+    padding: 30px;
+    border-radius: 6px;
+    background: linear-gradient(to top, black, 20%, rgb(216, 218, 239));
+}
+span{
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 700;
+}
+h1{
+    padding-top: 10px;
+    font-weight: 900;
+
+}
+.delete{
+    float: right;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: rgb(103, 10, 10);
+   
+  }
+  .delete:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(27, 27, 29, 0.1) 0px 4px 16px, rgba(21, 21, 27, 0.1) 0px 8px 24px, rgba(239, 239, 241, 0.1) 0px 16px 56px;
+  }
+

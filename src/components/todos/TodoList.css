@@ -1,0 +1,12 @@
+.Todo{
+    width: 70%;
+    margin: 40px auto;
+    padding: 1em;
+}
+p{
+    background-color: #333;
+    padding: 2em;
+    white-space: pre-line;
+    color: #009879;
+    font-size: 20px;
+}

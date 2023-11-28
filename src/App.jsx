@@ -1,19 +1,32 @@
-import { useState } from 'react'
-import Blog from './components/Blog'
-import './App.css'
+import { useDispatch, useSelector } from "react-redux"
+import { addUsers } from "./features/user/userSlice"
+import "./App.css"
 
-function App() {
-  const [data, setData] = useState(["Jhon", "Leonid", "Spartak", "Sebastian"]);
+export default function App() {
+  const user = useSelector((state)=>state.user)
+  const dispatch = useDispatch()
 
-  const handleDelete = (index) => {
-    setData(data.toSpliced(index, 1))
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const {userName} = e.target
+    dispatch(addUsers(userName.value.toUpperCase()))
+    e.target.reset()
   }
-
   return (
-    <div className='App'>
-      <Blog persons={data} handleDelete={handleDelete} />
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+        <input type="text" id="userName" required/>
+        <input type="submit" value="add user" />
+      </form>
+      <ul>
+       {
+        user.map((elem,index)=>{
+          return (
+            <li key={index} >{elem}</li>
+          )
+        })
+       }
+      </ul>
     </div>
   )
 }
-
-export default App

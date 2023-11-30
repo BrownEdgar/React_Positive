@@ -23,7 +23,7 @@ const usersSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getAsyncUasers.pending, (state, action) => {
+      .addCase(getAsyncUasers.pending, (state) => {
         state.status = 'pending';
       })
       .addCase(getAsyncUasers.fulfilled, (state, action) => {

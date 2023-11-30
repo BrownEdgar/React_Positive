@@ -1,4 +1,6 @@
 const checkUserMiddleWare = (store) => (next) => (action) => {
+
+
   console.log(new Date().toTimeString());
   if (action.type === 'users/addUser') {
     const users = store.getState().users;

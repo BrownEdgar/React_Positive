@@ -24,8 +24,8 @@ export default function App() {
         <h1>Latest episodes</h1>
         <button className='blue-btn'>View all episodes</button>
       </div>
-      <EpisodesList />
       <button className='blue-btn' onClick={addedNewEpisodes}>Add new episodes</button>
+      <EpisodesList />
     </div>
   )
 }

@@ -35,4 +35,9 @@ export const getPostsAsync = createAsyncThunk("posts/getPosts", async () => {
     }
 })
 
+//selectors
+export const getAllPosts = (state) => state.posts
+
+
+
 export default postsSlice.reducer

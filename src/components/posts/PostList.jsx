@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { getPostsAsync } from '../../feauters/posts/PostsSlice';
+import { getAllPosts, getPostsAsync } from '../../feauters/posts/PostsSlice';
 
 import './PostList.css'
 
 function PostList() {
-    const posts = useSelector(state => state.posts);
+    const posts = useSelector(getAllPosts);
     const dispatch = useDispatch()
-
     useEffect(() => {
         dispatch(getPostsAsync())
     }, [])

@@ -1,28 +1,27 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 
 export const getPostsAsync = createAsyncThunk(
- 'posts/getposts',
-  async () => {
-    const response = await fetch('https:/jsonplaceholder.typicode.com/posts?_limit=20');
+    'posts/getposts',
+    async () => {
+    const response = await fetch('https:/jsonplaceholder.typicode.com/posts?_limit=20')
     const data = response.json()
     return data
   }
-)
-
+);
 const postsSlice = createSlice({
-    name: 'posts',
-    initialState: {
-      data: [],
-      status: 'idle',
-      error: null
-    },
+name: 'posts',
+initialState:{
+    data: [],
+    status: 'idle',
+    error: null
+}, 
 reducers: {
-    deletePost(state, action) {
-      const id = action.payload;
-      state.data = state.data.filter(elem => elem.id !== id);
+    deletePost(state, action){
+        const id = action.payload
+        state.data = state.data.filter(elem => elem.id !== id)
     }
 },
-   
+
 extraReducers: (builder) => {
     builder
       .addCase(getPostsAsync.pending, (state) => {

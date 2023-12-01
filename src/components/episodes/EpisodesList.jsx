@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { deleteEpisode } from '../../features/counter/episodes/episodesSlice';
+import { deleteEpisode } from '../../features/episodes/episodesSlice';
 import './EpisodesList.css'
 
 export default function EpisodesList() {

@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSelector, createSlice } from "@reduxjs/toolkit";
 
 export const getTodosAsync = createAsyncThunk(
     'todos/getodos',
@@ -15,7 +15,13 @@ export const getTodosAsync = createAsyncThunk(
     initialState: {
         data: [],
         status: 'idle',
-        error: null
+        error: null,
+        filter: 'all'
+    },
+    reducers:{
+   updateFilter (state,action) {
+    state.filter = action.payload
+   }
     },
     extraReducers: (builder) => {
      builder
@@ -37,4 +43,23 @@ export const getTodosAsync = createAsyncThunk(
      })
     }
 })
+//selectors
+
+export const getFilterSelector = (state) => state.todos.filter;
+export const getTodos= (state) => state.todos.data
+
+export const superSelector = createSelector(
+    [getTodos,getFilterSelector],
+    (todos,filter) =>{
+        if(filter === 'all') return todos;
+    if(filter === 'completed'){
+    return todos.filter(todo => todo.completed)
+    }
+    return todos.filter(todo => !todo.completed)
+
+    }
+)
+
+
+export const {updateFilter} = todosSlice.actions
 export default todosSlice.reducer

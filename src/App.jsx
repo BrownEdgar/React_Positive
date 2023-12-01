@@ -1,7 +1,9 @@
 import { useDispatch } from 'react-redux'
-import EpisodesList from './components/episodes/EpisodesList'
-import { addEpisodes } from './features/counter/episodes/episodesSlice'
 import './App.css'
+import { addEpisodes } from './features/episodes/episodesSlice'
+import EpisodesList from './components/episodes/EpisodesList'
+// import TodoList from './components/todos/TodoList'
+// import Test from './components/test/Test'
 
 export default function App() {
   const dispatch = useDispatch()
@@ -25,8 +27,11 @@ return (
       <p>Latest episodes</p>
       <button className='blue-btn'>View all episodes</button>
   </div>
-    <EpisodesList />
+
     <button className='blue-btn' onClick={addedNewEpisodes}>add new episodes</button>
+    <EpisodesList />
+    {/* <Test count={1} /> */}
+    {/* <TodoList /> */}
 
    
   </div>

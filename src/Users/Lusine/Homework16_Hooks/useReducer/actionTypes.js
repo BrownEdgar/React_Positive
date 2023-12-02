@@ -1,5 +1,0 @@
-export const SHUFFLE_NUMBERS = 'SHUFFLE_NUMBERS'
-export const ADD_RANDOM_NUMBER = 'ADD_RANDOM_NUMBER'
-export const CHANGE_USERNAME = 'CHANGE_USERNAME'
-export const ADD_NUMBER = 'ADD_NUMBER'
-export const ADD_USER = 'ADD_USER'

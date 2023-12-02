@@ -1,0 +1,37 @@
+.Products{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 460px;
+    margin: 20px auto;
+    border: 1350px;
+}
+.Products>div{
+    width: 312px;
+    border-radius: 16px;
+    border: 1.5px solid #E6E6E6;
+    overflow: hidden;
+}
+.Products>div img{
+    object-fit: contain;
+    width: 100%;
+    height: 280px;
+}
+.Products>div .content{
+    padding: 16px 20px 20px 20px;
+    background-color: #fff;
+    display: flex;
+    gap: 16px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+}
+.title{
+    color: #000;
+    font-family: 'Rotunda';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}

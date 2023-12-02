@@ -1,19 +1,11 @@
-import { useState } from 'react'
-import Blog from './components/Blog'
+import Products from './components/Products/Products';
+
 import './App.css'
 
-function App() {
-  const [data, setData] = useState(["Jhon", "Leonid", "Spartak", "Sebastian"]);
-
-  const handleDelete = (index) => {
-    setData(data.toSpliced(index, 1))
-  }
-
+export default function App() {
   return (
     <div className='App'>
-      <Blog persons={data} handleDelete={handleDelete} />
+      <Products />
     </div>
   )
 }
-
-export default App

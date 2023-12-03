@@ -1,21 +1,6 @@
 .App{
-  margin: 0 20px;
-  max-width: 1400px;
-  padding: 100px 70px 160px;
-  font-family: 'DM Sans';
-  
-}
-
-.App-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-  color: white;
-  font-size: 64px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-family: 'DM Sans';
-
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 0 auto;
 
 }

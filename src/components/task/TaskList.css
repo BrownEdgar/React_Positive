@@ -1,0 +1,95 @@
+.Task{
+   width: 1440px;
+   height: 712px;
+   flex-shrink: 0;
+   background: #F8FAFB;
+   margin-top: 50px;
+}
+.flex{
+    width: 928px;
+    height: 928px;
+    display: flex;
+    
+}
+img{
+    width: 545px;
+    height: 416px;
+    margin-left: 135px;
+    margin-top: 30px;
+    box-shadow: 0px 80px 50px -30px rgba(0, 0, 0, 0.15);
+}
+h1{
+    width: 1127px;
+    height: 80px;
+    padding: 56px;
+    padding-left: 136px;
+    color: #121212;
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+}
+.Task-title{
+    width: 329px;
+    height: 75px;
+    color: #121212;
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+svg{
+    margin-left: 142px;
+    stroke-width: 2px;
+    margin-top: 40px;
+    
+}
+.span{
+    display: flex;
+    color: rgba(18, 18, 18, 0.60);
+}
+.text{
+    margin-top: 25px;
+    width: 212px;
+    height: 35px;
+    color: rgba(18, 18, 18, 0.60);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%; 
+    margin-left: 17px;
+}
+.categories{
+    color: rgba(18, 18, 18, 0.60);
+    width: 213px;
+    height: 35px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    margin-left: 50px;
+}
+.desc{
+    width: 559px;
+    height: 184px;
+    color: rgba(18, 18, 18, 0.83);
+    text-align: justify;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 191%; 
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.button{
+    margin-top: 10px;
+    margin-left: -98px;
+}
+
+    

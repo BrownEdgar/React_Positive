@@ -1,46 +1,16 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { counterSlice, episodesSlice, postsSlice, todosSlice, usersSlice } from "../features";
-import {
-    persistStore,
-    persistReducer,
-    FLUSH,
-    REHYDRATE,
-    PAUSE,
-    PERSIST,
-    PURGE,
-    REGISTER,
-  } from 'redux-persist'
-  import storage from 'redux-persist/lib/storage'
- 
+import {configureStore } from "@reduxjs/toolkit";
+import { counterSlice, episodesSlice, postsSlice, taskSlice, todosSlice, usersSlice } from "../features";
 
-  
-  const persistConfig = {
-    key: 'root',
-    version: 1,
-    storage,
-    whitelist: ['episodes']
-  }
-  const rootReducer = combineReducers(
-    {
+ const store = configureStore({
+    reducer:{
         counter: counterSlice,
         episodes: episodesSlice,
         users: usersSlice,
         todos: todosSlice,
-        posts: postsSlice
+        posts: postsSlice,
+        task: taskSlice
+    }
        
     })
-  
-  const persistedReducer = persistReducer(persistConfig, rootReducer)
 
-
-const store = configureStore({
-    reducer:persistedReducer,
-    middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
-})
-export const persistor = persistStore(store)
 export default store

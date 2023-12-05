@@ -4,6 +4,9 @@
 4. git pull
 5. git push
 
+
+1. git fetch
+2. git checkout martin-redux
 //user auth 6. git config user.email "<example@gmail.com>" --global 6. git config user.name "github login name" --global
 
 ///////////

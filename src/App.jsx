@@ -1,19 +1,18 @@
-import { useState } from 'react'
-import Blog from './components/Blog'
 import './App.css'
+import EpisodesList from './components/episodes/EpisodesList'
 
-function App() {
-  const [data, setData] = useState(["Jhon", "Leonid", "Spartak", "Sebastian"]);
 
-  const handleDelete = (index) => {
-    setData(data.toSpliced(index, 1))
-  }
 
-  return (
-    <div className='App'>
-      <Blog persons={data} handleDelete={handleDelete} />
-    </div>
-  )
+
+export default function App() {
+
+    return (
+        <div className="App">
+            <div className='App-header'>
+                <h1>Latest epizodes</h1>
+                <button>View all episodes</button>
+            </div>
+            <EpisodesList />
+        </div>
+    )
 }
-
-export default App

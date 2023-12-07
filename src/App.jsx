@@ -1,16 +1,20 @@
-import EpisodesList from "./components/Episodes/EpisodesList";
 
 import './App.css'
+import LOCALS from './i18n/local';
 
 export default function App() {
 
+  
   return (
     <div className="App">
-      <div className="App-header">
-        <h1>Latest episodes</h1>
-        <button>Viev all episodes</button>
-        <EpisodesList />
-      </div>
+      <select name="language" id="language">
+        {
+          Object.keys(LOCALS).map(elem => {
+            return <option value={elem}>{LOCALS[elem] }</option>
+          })
+        }
+  </select>
+    
 
     </div>
   )

@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import App from "./Users/Edgar/pagination/App";
+import App from "./Users/Hayk/pagination/App";
 import './index.css'
 
 

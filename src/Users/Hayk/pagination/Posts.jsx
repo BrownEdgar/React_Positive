@@ -6,7 +6,6 @@ export default function Posts({perPage,totalPage,changePage,page}) {
     for(let i = 1; i <= total; i++){
         arr.push(i)
     }
-    console.log(arr);
 
 
    

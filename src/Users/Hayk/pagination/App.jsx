@@ -1,24 +1,18 @@
 import { useEffect } from 'react'
 import  './App.scss'
-import axios from 'axios'
 import { useState } from 'react'
 import Pagination from './Pagination'
 import Posts from './Posts'
+import { posts } from './postsJson'
+console.log(posts);
 
 export default function App() {
     const [users, setUsers] = useState([])
-    console.log(users);
-    const [page, setPage] = useState(2)
-    const [perPage, setperPage] = useState(10)
+    const [page, setPage] = useState(1)
+    const [perPage] = useState(10)
     useEffect(() => {
-      axios({
-        baseURL: "https://jsonplaceholder.typicode.com/",
-        url: "posts",
-        params:{
-            _limit:perPage,
-            _start: (page * perPage) - perPage,
-        }
-      }).then(res=>setUsers(res.data))
+      const pegination = posts.slice((page * perPage) - perPage,(page * perPage))
+      setUsers(pegination)
     }, [page,perPage])
 
     const changePage = (page) => {

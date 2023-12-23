@@ -4,15 +4,14 @@ import Translate from "./i18n/Translate";
 import LOCALES from "./i18n/local";
 
 
-export default function App() {
+function App() {
   const [locale, setLocale] = useState(LOCALES.ENGLISH)
 
   const handleChange = (e) => {
-    console.log(e.target.value);
-    setLocale(LOCALES[e.target.value])
+    setLocale(e.target.value)
   }
   return (
-    <I18nProvider local={locale}>
+    <I18nProvider locale={locale}>
           <div>
       <select name="language" id="language" onChange={handleChange}>
         {
@@ -27,3 +26,5 @@ export default function App() {
 
   )
 }
+export default App
+

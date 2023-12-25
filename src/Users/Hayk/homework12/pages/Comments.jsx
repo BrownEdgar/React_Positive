@@ -11,10 +11,10 @@ export default function Comments() {
   );
 }
 
-const commentsLoader = () => {
-  return axios
-    .get("https://jsonplaceholder.typicode.com/comments")
-    .then((res) => res.data);
+const commentsLoader = async () => {
+  const res = await axios
+    .get("https://jsonplaceholder.typicode.com/comments");
+  return res.data;
 };
 
 // eslint-disable-next-line react-refresh/only-export-components

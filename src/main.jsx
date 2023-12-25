@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import App from "./Users/Hayk/qnutyan xndirner/guyner/App";
+import App from "./Users/Hayk/qnutyan xndirner/redux/components/todos/TodoList";
 import './index.css'
 
 

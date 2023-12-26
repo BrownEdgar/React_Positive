@@ -1,0 +1,29 @@
+ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    padding: 1em;
+    li{
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 20px;
+        border: 1px solid grey;
+        flex-basis: 80px;
+        text-align: center;
+    }
+}
+form{
+    width: 400px;
+    margin: 40px auto;
+}
+input{
+    width: 300px;
+
+}
+
+h1{
+    text-align: center;
+    
+}

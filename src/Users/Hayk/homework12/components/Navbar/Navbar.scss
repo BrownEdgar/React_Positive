@@ -1,0 +1,17 @@
+.Navbar {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(84, 83, 83);
+  box-shadow: 0px 3px 17px gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .active {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+}

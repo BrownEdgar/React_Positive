@@ -1,0 +1,25 @@
+form{
+    width: 400px;
+    margin: 40px auto;
+}
+
+input{
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  div{
+    flex-basis: 27px;
+    border: 1px solid grey;
+    text-align: center;
+  }
+}

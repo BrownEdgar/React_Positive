@@ -1,0 +1,13 @@
+pre{
+    background-color: #222;
+    color: rgb(206, 203, 203);
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 1200px;
+    white-space: pre-wrap;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 45px 65px rgba(8, 7, 7, 0.5), 0 35px 22px rgba(0,0,0,0.16);
+    cursor: pointer;
+ }

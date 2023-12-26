@@ -1,0 +1,54 @@
+#root{
+    background-color: rgb(29, 49, 119);
+    height: 1000px;
+    margin-top: -32px;
+}
+
+.App{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.container{
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: left;
+    background: linear-gradient(90deg, rgb(43, 213, 216) 0%, rgb(38, 58, 237) 100%);
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    margin-bottom: 6px;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+.container > div{
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgb(29, 49, 119);
+    
+}
+
+button{
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    background-color: gold;
+    border: 0px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: rgb(93, 87, 87);
+}
